@@ -28,7 +28,7 @@ namespace ChatClient
 
                 Console.WriteLine("Join group and resend message");
                 proxy.Invoke("JoinGroup", "group").Wait();
-                proxy.Invoke("Send", new { UserName = "Test", Message = "MessageToGroup" }, "group").Wait();
+                proxy.Invoke("Send", new { UserName = "Test", Message = "MessageToGroup1" }, "group").Wait();
 
                 Console.ReadLine();
             }
