@@ -1,11 +1,11 @@
-﻿using System.Collections.Concurrent;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using ChatHub.ChatHub.Abstract;
 using ChatHub.ChatHub.Models;
 using Microsoft.AspNet.SignalR;
 
 namespace ChatHub.ChatHub.Concrete
 {
+    [Authorize]
     public class ChatHub : Hub<IChat>
     {
         public void Send(MessageModel model)
